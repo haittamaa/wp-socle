@@ -1,0 +1,84 @@
+    {
+  "name": "johnpbloch/wordpress",
+  "description": "Plugin & play WordPress custom distribution",
+  "keywords": [
+    "wordpress",
+    "blog",
+    "cms"
+  ],
+  "type": "package",
+  "homepage": "http://wordpress.org/",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "WordPress Community",
+      "homepage": "http://wordpress.org/about/"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/haittamaa/JointsWP.git"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/haittamaa/WordPressPrivatePlugins.git"
+    }
+  ],  
+  "extra": {
+	"wordpress-install-dir": "www",
+    "installer-paths": {
+        "www/wp-content/plugins/{$name}": ["type:wordpress-plugin"],
+        "www/wp-content/themes/{$name}": ["type:wordpress-theme"],
+        "www/wp-content/mu-plugins/{$name}": ["type:wordpress-muplugin"]
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "rm -r  f www/wp-content/themes/twenty*",
+      "rm -r  f www/wp-content/plugins/hello.php"
+    ]
+  },
+  "require": {
+    "php": ">=5.4",
+    "johnpbloch/wordpress-core-installer": "*",
+    "johnpbloch/wordpress-core": "*",
+    "Wordpress-extensions/JointsWP": "dev-master",
+    "Wordpress-extensions/advanced-custom-fields-pro": "dev-advanced-custom-fields-pro",
+    "Wordpress-extensions/polylang-extra": "dev-polylang-extra",
+    "wpackagist-plugin/wp-cerber": "*",
+    "wpackagist-plugin/breadcrumb-navxt": "*",
+    "wpackagist-plugin/admin-menu-editor": "*",
+    "wpackagist-plugin/advanced-access-manager": "*",
+    "wpackagist-plugin/advanced-ads": "*",
+    "wpackagist-plugin/caldera-forms-run-action": "*",
+    "wpackagist-plugin/caldera-forms-translation": "*",
+    "wpackagist-plugin/caldera-forms": "*",
+    "wpackagist-plugin/coming-soon": "*",
+    "wpackagist-plugin/cookie-law-info": "*",
+    "wpackagist-plugin/database-sync": "*",
+    "wpackagist-plugin/disable-comments": "*",
+    "wpackagist-plugin/easy-social-icons": "*",
+    "wpackagist-plugin/email-encoder-bundle": "*",
+    "wpackagist-plugin/google-analytics-for-wordpress": "*",
+    "wpackagist-plugin/polylang": "*",
+    "wpackagist-plugin/post-types-order": "*",
+    "wpackagist-plugin/regenerate-thumbnails": "*",
+    "wpackagist-plugin/search-everything": "*",
+    "wpackagist-plugin/tinymce-advanced": "*",
+    "wpackagist-plugin/wordpress-importer": "*",
+    "wpackagist-plugin/wordpress-seo": "*",
+    "wpackagist-plugin/wp-awesome-faq": "*",
+    "wpackagist-plugin/wp-fastest-cache": "*",
+    "wpackagist-plugin/all-in-one-schemaorg-rich-snippets": "*",
+    "wpackagist-plugin/wp-exporter": "*",
+    "wpackagist-plugin/master-slider": "*",
+    "wpackagist-plugin/plugin-inspector": "*",
+    "wpackagist-plugin/query-monitor": "*",
+    "wpackagist-plugin/wpfront-user-role-editor":"*"
+  }
+}
