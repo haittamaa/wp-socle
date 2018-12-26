@@ -35,8 +35,8 @@
   },
   "scripts": {
     "post-install-cmd": [
-      "rm -r  f www/wp-content/themes/twenty*",
-      "rm -r  f www/wp-content/plugins/hello.php"
+      "rm -rf www/wp-content/themes/twenty*",
+      "rm -rf www/wp-content/plugins/hello.php"
     ]
   },
   "require": {
