@@ -15,3 +15,8 @@
 |  WP Awesome FAQ |  Gratuit |  Page FAQ |
 |  Yoast SEO |  Gratuit |  SEO |
 |  TinyMCE Advanced |  Gratuit |  Configuration de l'editeur wysiwyg |
+|  classic-editor |  Gratuit |  Restorer l'éditeur wysiwyg classic et désactiver Gutenberg |
+|  Query Monitor |  Gratuit |  debugging of database queries, PHP errors, hooks and actions |
+|  Regenerate Thumbnails |  Gratuit |  regenerate all thumbnail sizes for one or more images |
+|  Post Types Order |  Gratuit |   Order Posts and Post Types Objects using a Drag and Drop |
+|  Advanced Custom Fields |  Premium |   Version PRO du plugin Advanced Custom Fields |

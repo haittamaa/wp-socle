@@ -19,10 +19,6 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org"
-    },
-    {
-      "type": "git",
-      "url": "https://github.com/haittamaa/JointsWP.git"
     }
   ],  
   "extra": {
@@ -43,9 +39,9 @@
     "php": ">=5.4",
     "johnpbloch/wordpress-core-installer": "*",
     "johnpbloch/wordpress-core": "*",
-    "Wordpress-extensions/JointsWP": "dev-master",
-    "haittamaa/advanced-custom-fields-pro": "dev-master",
-    "haittamaa/polylang-extra": "dev-master",
+    "haittamaa/jointswp": "*",
+    "haittamaa/advanced-custom-fields-pro": "*",
+    "haittamaa/polylang-extra": "*",
     "wpackagist-plugin/wp-cerber": "*",
     "wpackagist-plugin/breadcrumb-navxt": "*",
     "wpackagist-plugin/admin-menu-editor": "*",
@@ -76,6 +72,7 @@
     "wpackagist-plugin/plugin-inspector": "*",
     "wpackagist-plugin/query-monitor": "*",
     "wpackagist-plugin/wpfront-user-role-editor":"*",
-    "wpackagist-plugin/wp-smushit": "*"
+    "wpackagist-plugin/wp-smushit": "*",
+    "wpackagist-plugin/classic-editor": "*"
   }
 }
