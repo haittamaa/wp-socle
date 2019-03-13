@@ -2,7 +2,7 @@
 
 |  Plugin |  Type | Rôle  |
 |---|---|---|
-|  Caldera Form |  Gratuit |   Création de formulaires |
+|  Contact form 7 |  Gratuit |   Création de formulaires |
 |  Cerber |  Gratuit |  Sécurité |
 |  Smush |  Gratuit |  Compression et optimisation des images |
 |  wp-webp |  Gratuit |  Afficher des images WebP |

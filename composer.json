@@ -1,5 +1,5 @@
-    {
-  "name": "johnpbloch/wordpress",
+{
+  "name": "haittamaa/wp-socle",
   "description": "Plugin & play WordPress custom distribution",
   "keywords": [
     "wordpress",
@@ -30,15 +30,14 @@
     }
   },
   "scripts": {
-    "post-install-cmd": [
+    "post-autoload-dump": [
       "rm -rf www/wp-content/themes/twenty*",
       "rm -rf www/wp-content/plugins/hello.php"
     ]
   },
   "require": {
     "php": ">=5.4",
-    "johnpbloch/wordpress-core-installer": "*",
-    "johnpbloch/wordpress-core": "*",
+    "roots/wordpress-core-installer": "*",
     "haittamaa/jointswp": "*",
     "haittamaa/advanced-custom-fields-pro": "*",
     "haittamaa/polylang-extra": "*",
@@ -47,9 +46,12 @@
     "wpackagist-plugin/admin-menu-editor": "*",
     "wpackagist-plugin/advanced-access-manager": "*",
     "wpackagist-plugin/advanced-ads": "*",
-    "wpackagist-plugin/caldera-forms-run-action": "*",
-    "wpackagist-plugin/caldera-forms-translation": "*",
-    "wpackagist-plugin/caldera-forms": "*",
+    "wpackagist-plugin/contact-form-7": "*",
+    "wpackagist-plugin/contact-form-7-honeypot": "*",
+    "wpackagist-plugin/contact-form-cfdb7": "*",
+    "wpackagist-plugin/contact-form-7-multi-step-module": "*",
+    "wpackagist-plugin/cf7-grid-layout": "*",
+    "wpackagist-plugin/cf7-polylang": "*",
     "wpackagist-plugin/coming-soon": "*",
     "wpackagist-plugin/cookie-law-info": "*",
     "wpackagist-plugin/database-sync": "*",
