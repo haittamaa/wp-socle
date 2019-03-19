@@ -1,0 +1,74 @@
+{
+  "name": "haittamaa/wp-socle",
+  "description": "Plugin & play WordPress custom distribution",
+  "keywords": [
+    "wordpress",
+    "Starter kit",
+    "cms"
+  ],
+  "type": "package",
+  "homepage": "http://wordpress.org/",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "WordPress Community",
+      "homepage": "http://wordpress.org/about/"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],  
+  "extra": {
+	"wordpress-install-dir": "www",
+    "installer-paths": {
+        "www/wp-content/plugins/{$name}": ["type:wordpress-plugin"],
+        "www/wp-content/themes/{$name}": ["type:wordpress-theme"],
+        "www/wp-content/mu-plugins/{$name}": ["type:wordpress-muplugin"]
+    }
+  },
+  "autoload": {
+    "psr-4": {
+        "Moncton\\WP\\Starter\\": "class"
+    }
+  },
+  "scripts": {
+    "pre-autoload-dump": [
+      "Moncton\\WP\\Starter\\Init::preAutoloadDump"
+    ],
+    "post-autoload-dump": [
+      "Moncton\\WP\\Starter\\Init::postAutoloadDump"
+    ]
+  },
+  "require": {
+    "php": ">=5.6",
+    "composer/installers": "*",
+    "symfony/yaml": "*",
+    "symfony/filesystem": "*",
+    "symfony/finder": "*",
+    "johnpbloch/wordpress-core-installer": "*",
+    "johnpbloch/wordpress-core": "*",
+    "moncton/jointswp": "*",
+    "moncton/advanced-custom-fields-pro": "*",
+    "wpackagist-plugin/classic-editor": "*",
+    "wpackagist-plugin/tinymce-advanced": "*",
+    "wpackagist-plugin/w3-total-cache": "*",
+    "wpackagist-plugin/wp-smushit": "*",
+    "wpackagist-plugin/contact-form-7": "*",
+    "wpackagist-plugin/contact-form-7-honeypot": "*",
+    "wpackagist-plugin/contact-form-cfdb7": "*",
+    "wpackagist-plugin/contact-form-7-multi-step-module": "*",
+    "wpackagist-plugin/cf7-grid-layout": "*",
+    "wpackagist-plugin/breadcrumb-navxt": "*",
+    "wpackagist-plugin/wordpress-seo": "*",
+    "wpackagist-plugin/post-types-order": "*",
+    "wpackagist-plugin/wordpress-importer": "*",
+    "wpackagist-plugin/wp-exporter": "*",
+    "wpackagist-plugin/wp-awesome-faq": "*",
+    "wpackagist-plugin/polylang": "*",
+    "wpackagist-plugin/cf7-polylang": "*",
+    "moncton/polylang-extra": "*"
+  }
+}

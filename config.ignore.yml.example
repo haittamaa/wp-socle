@@ -1,0 +1,3 @@
+ignore:
+  - wp-content/themes/JointsWP-child
+  - wp-content/plugins/custom-plugin
